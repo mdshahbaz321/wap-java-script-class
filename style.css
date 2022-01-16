@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 97%;
+    height: 1200px;
+    border: blanchedalmond groove 4px;
+    border-bottom: 0px ;
+    
+
+}
+#big-image{
+    width: 80%;
+    height: 500px;
+    margin: 30px 90px;
+    border: 6px groove rgb(196, 67, 67);
+
+
+}
+#images{
+    width: 150px;
+    height: 100px;
+    margin: 10px 25px;
+    float: left;
+    border: 2px solid red;
+
+}
+#images-box{
+    margin: 10px 80px;
+    
+}
