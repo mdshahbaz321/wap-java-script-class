@@ -4,62 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js">
-    </script>
     <title>Document</title>
 </head>
 <body>
-    <div id="result">
-        <h1 id="text">
-            SEE HERE TO KNOW RESULT
-        </h1>
-    </div>
-    <div id="box">
-        <button onclick="wap()">color</button>
-        <button onclick="wap1()">font-family</button>
-        <button onclick="wap2()">font-size</button>
-        <button onclick="wap3()">border</button>
-        <button onclick="wap4()">background</button>
-        <button onclick="wap5()">margin</button>
-        <button onclick="wap6()">padding</button>
-        <button onclick="wap7()">text-align</button>
-        <button onclick="wap8()">1+2</button>
-        <button onclick="wap9()">44-33</button>
-        <button onclick="wap10()">33*5</button>
-        <button onclick="wap11()">555/5</button>
-        <button onclick="wap()">color</button>
-        <button onclick="wap1()">font-family</button>
-        <button onclick="wap2()">font-size</button>
-        <button onclick="wap3()">border</button>
-        <button onclick="wap4()">background</button>
-        <button onclick="wap5()">margin</button>
-        <button onclick="wap6()">padding</button>
-        <button onclick="wap7()">text-align</button>
-        <button onclick="wap8()">1+2</button>
-        <button onclick="wap9()">44-33</button>
-        <button onclick="wap10()">33*5</button>
-        <button onclick="wap11()">555/5</button>
-        <button onclick="wap()">color</button>
-        <button onclick="wap1()">font-family</button>
-        <button onclick="wap2()">font-size</button>
-        <button onclick="wap3()">border</button>
-        <button onclick="wap4()">background</button>
-        <button onclick="wap5()">margin</button>
-        <button onclick="wap6()">padding</button>
-        <button onclick="wap7()">text-align</button>
-        <button onclick="wap8()">1+2</button>
-        <button onclick="wap9()">44-33</button>
-        <button onclick="wap10()">33*5</button>
-        <button onclick="wap11()">555/5</button>
-        <button onclick="wap()">color</button>
-        <button onclick="wap1()">font-family</button>
-        <button onclick="wap2()">font-size</button>
-        <button onclick="wap3()">border</button>
-        <button onclick="wap4()">background</button>
-        <button onclick="wap5()">margin</button>
+    <h1>Find Your Remainder</h1><hr>
+    <input type="number" id="first-value">
+    <input type="number" id="second-value">
+    <button onclick="wap()">Remainder result</button>
+    <h2 id="result"></h2>
+    <input type="number" id="third-value">
+    <button onclick="wap5()">incriment</button>
+    <h2 id="result-2"></h2>
+    <input type="number" id="four-value">
+    <button onclick="wap3()">decrement</button>
+    <h2 id="result-3"></h2>
+    <script>
+        function wap()
+        {
+        var x = document.getElementById("first-value").value;
+        var y = document.getElementById("second-value").value;
+        var z = document.getElementById("result");
+        z.innerHTML = x % y;
         
-    </div>
-    
+        }
+
+        function wap5()
+        {
+            var a = document.getElementById("third-value").value;
+            a++;
+        var b =document.getElementById("result-2");
+        b.innerHTML = a;
+        }
+
+        function wap3()
+        {
+            var c = document.getElementById("four-value").value;
+            c--;
+        var d =document.getElementById("result-3");
+        d.innerHTML = c;
+        }
+        
+    </script>
 </body>
 </html>
